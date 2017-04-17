@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_restaurant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="app.doordash.demo.RestaurantActivity">
+
+    <FrameLayout
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hundred_dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/map_fragment"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:layout_marginRight="@dimen/five_dp"
+        android:background="@android:color/white" />
+    <Button
+        android:id="@+id/add_favorites_button"
+        style="@style/SearchButton"
+        android:layout_width="@dimen/two_hundred_dp"
+        android:layout_height="@dimen/forty_five_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/twenty_five_dp"
+        android:background="@drawable/search_button"
+        android:text="@string/favoritesbtn" />
+</RelativeLayout>
